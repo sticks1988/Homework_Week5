@@ -13,3 +13,12 @@ var clockT = moment().format('MMMM Do YYYY, h:mm:ss a');
 
 var hereT = $("#currentDay");
 hereT.append(clockT);
+
+for (var i = 0; i < hourSign.length; i++) {
+    var differentButton = $("<button type='button' class='saveBtn col-1 far fa-save'>");
+    var break1 = $("<div class='hour col-1'>");
+    var brandLine = $("<div class='row time-block'>").attr("id", listL[i]);
+    var break2 = $("<textarea class='col-10'>");
+
+    squareT.append(brandLine); break1.text(hourSign[i]); brandLine.append(break1); brandLine.append(break2); brandLine.append(differentButton);
+}
