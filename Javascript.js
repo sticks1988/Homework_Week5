@@ -22,3 +22,20 @@ for (var i = 0; i < hourSign.length; i++) {
 
     squareT.append(brandLine); break1.text(hourSign[i]); brandLine.append(break1); brandLine.append(break2); brandLine.append(differentButton);
 }
+
+var verify = setInterval(colorTime);
+
+function colorTime() {
+    var rightNow = moment().hours(hourSign);
+    $(".time-block").each(function () {
+        var blockHour = parseInt($(this).attr("id").split(" "));
+
+        if (blockHour < rightNow) {
+            $(this).addClass("past");
+        } else if (blockHour === rightNow) {
+            $(this).addClass("present"); $(this).removeClass("past");
+        } else {
+            $(this).removeClass("present"); $(this).removeClass("past"); $(this).addClass("future");
+        }
+    });
+}
