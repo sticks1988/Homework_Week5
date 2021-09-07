@@ -23,6 +23,7 @@ for (var i = 0; i < hourSign.length; i++) {
     squareT.append(brandLine); break1.text(hourSign[i]); brandLine.append(break1); brandLine.append(break2); brandLine.append(differentButton);
 }
 
+//This is my function to apply background coloring on the current hour for the appropriate row 
 var verify = setInterval(colorTime);
 
 function colorTime() {
