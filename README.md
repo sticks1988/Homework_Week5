@@ -14,6 +14,7 @@ I added local storage and button functionality when clicking save and reloading 
 
 
 
+![image](https://user-images.githubusercontent.com/87619568/132269086-9b879064-b13a-4c37-a62d-161f87bef593.png)
 
 
 
