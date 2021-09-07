@@ -1,9 +1,9 @@
 var hourSign = [
-    "12 PM", "1 PM", "2 PM", "3 PM", "4 PM", "5 PM", "6 PM", "7 PM", "8 PM"
+    "9 AM", "10 AM", "11 AM", "12 PM", "1 PM", "2 PM", "3 PM", "4 PM", "5 PM"
 ];
 
 var listL = [
-    "12", "13", "14", "15", "16", "17", "18", "19", "20"
+    "9", "10", "11", "12", "13", "14", "15", "16", "17"
 ];
 
 //This is my current date and time to be shown in the class of currentDay using moment.js
@@ -43,6 +43,8 @@ function colorTime() {
         }
     });
 }
+
+//Added local storage function and on click button function to display and set data in appropriate block to appear on page
 grabLocalInformation();
 
 function grabLocalInformation() {
